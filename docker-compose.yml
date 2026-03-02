@@ -1,0 +1,26 @@
+
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: flowpilot
+      POSTGRES_USER: flowpilot
+      POSTGRES_PASSWORD: flowpilot
+    ports:
+      - "5432:5432"
+
+  api:
+    build: ./apps/api
+    ports:
+      - "3001:3001"
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgresql://flowpilot:flowpilot@db:5432/flowpilot
+
+  web:
+    build: ./apps/web
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
