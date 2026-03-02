@@ -1,5 +1,12 @@
 
+
 # 🚀 FlowPilot (Enterprise Edition)
+
+![CI](https://github.com/fredericoahb/flowpilot/actions/workflows/ci.yml/badge.svg)
+![License](https://img.shields.io/github/license/fredericoahb/flowpilot)
+![Last Commit](https://img.shields.io/github/last-commit/fredericoahb/flowpilot)
+![Repo Size](https://img.shields.io/github/repo-size/fredericoahb/flowpilot)
+
 
 FlowPilot é uma plataforma full stack para gestão de demandas de TI, incidentes, runbooks e métricas operacionais.
 
