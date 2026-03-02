@@ -15,8 +15,6 @@ services:
       - "3001:3001"
     depends_on:
       - db
-    environment:
-      DATABASE_URL: postgresql://flowpilot:flowpilot@db:5432/flowpilot
 
   web:
     build: ./apps/web
